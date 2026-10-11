@@ -2,7 +2,9 @@
 
 適合臺灣國小五、六年級的英語寵物養成遊戲。無需帳號、安裝或後端，使用繁體中文介面與第三關的 21 個英文句型。
 
-**遊玩網址：https://imacipadtw-lang.github.io/stage3chat/**
+**遊玩網址：https://rawcdn.githack.com/imacipadtw-lang/stage3chat/1d21ef0c3cfc0c8286899ace88116709e849c2ff/index.html**
+
+完整程式已上傳 GitHub。此網址透過公開靜態 CDN 讀取已驗證的固定版本，不需要登入。GitHub Pages 尚未啟用：目前平台授權沒有 Pages 寫入權限；這不影響上方遊戲網址的使用。
 
 ## 學生使用
 
@@ -29,7 +31,7 @@ cd /workspace/stage3chat
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-在本機瀏覽器開啟服務，檢查首頁、完成任務及教師設定。以 GitHub Pages 的 `main` 分支根目錄發布；`.nojekyll` 讓所有靜態檔案直接提供服務。
+在本機瀏覽器開啟服務，檢查首頁、完成任務及教師設定。若另外啟用 GitHub Pages，可選擇 `main` 分支根目錄；`.nojekyll` 讓所有靜態檔案直接提供服務。
 
 ## 檔案
 
