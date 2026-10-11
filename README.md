@@ -2,9 +2,9 @@
 
 適合臺灣國小五、六年級的英語寵物養成遊戲。無需帳號、安裝或後端，使用繁體中文介面與第三關的 21 個英文句型。
 
-**遊玩網址：https://rawcdn.githack.com/imacipadtw-lang/stage3chat/1d21ef0c3cfc0c8286899ace88116709e849c2ff/index.html**
+**[點這裡開始遊戲](https://htmlpreview.github.io/?https://github.com/imacipadtw-lang/stage3chat/blob/c295fae76fb5fc77b03a3c6ba279fa595cb8cc49/play.html)**
 
-完整程式已上傳 GitHub。此網址透過公開靜態 CDN 讀取已驗證的固定版本，不需要登入。GitHub Pages 尚未啟用：目前平台授權沒有 Pages 寫入權限；這不影響上方遊戲網址的使用。
+完整程式已上傳 GitHub。此網址使用 HTMLPreview 直接開啟 GitHub 上的固定版本，不需要登入。`play.html` 內含遊戲程式、教材、樣式與寵物圖片，並保留教師設定。GitHub Pages 尚未啟用：目前平台授權沒有 Pages 寫入權限；這不影響上方遊戲網址的使用。
 
 ## 學生使用
 
@@ -33,9 +33,13 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 在本機瀏覽器開啟服務，檢查首頁、完成任務及教師設定。若另外啟用 GitHub Pages，可選擇 `main` 分支根目錄；`.nojekyll` 讓所有靜態檔案直接提供服務。
 
+修改遊戲來源後，執行 `python3 build-preview.py` 重新產生完整的 `play.html`。公開預覽保留教師設定；教師匯出學生版時會讀取同目錄的來源檔，因此需有網路或本機靜態服務。匯出的學生 HTML 可獨立離線開啟。
+
 ## 檔案
 
 - `index.html`：網站入口。
+- `play.html`：內含程式、樣式、教材與圖片的完整預覽入口。
+- `build-preview.py`：從來源檔重建完整預覽，無需安裝套件。
 - `styles.css`：iPad 橫式優先、觸控與直式相容版面。
 - `curriculum.js`：21 句教材與圖像、情境對應。
 - `app.js`：題目、寵物、進度、教師設定、語音與匯出。
